@@ -15,6 +15,7 @@ build-number = 5
 source = "eigen"
 run-tests = false
 check-relocatable = false
+any = true
 
 [build-system]
 requires = ["cmeel[build]"]
