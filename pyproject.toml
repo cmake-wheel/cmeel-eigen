@@ -14,9 +14,10 @@ homepage = "https://github.com/cmake-wheel/cmeel-eigen"
 repository = "https://github.com/cmake-wheel/cmeel-eigen.git"
 
 [tool.cmeel]
-any = true
 build-number = 6
 check-relocatable = false
+has-binaries = false
+has-sitelib = false
 run-tests = false
 source = "eigen"
 
