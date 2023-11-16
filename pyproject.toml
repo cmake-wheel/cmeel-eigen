@@ -14,6 +14,7 @@ homepage = "https://github.com/cmake-wheel/cmeel-eigen"
 repository = "https://github.com/cmake-wheel/cmeel-eigen.git"
 
 [tool.cmeel]
+build-number = 0
 check-relocatable = false
 has-binaries = false
 has-sitelib = false
