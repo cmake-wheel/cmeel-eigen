@@ -12,6 +12,7 @@ version = "3.4.0.2"
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-eigen"
 repository = "https://github.com/cmake-wheel/cmeel-eigen.git"
+upstream = "https://gitlab.com/libeigen/eigen"
 
 [tool.cmeel]
 build-number = 0
