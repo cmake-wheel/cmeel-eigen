@@ -1,15 +1,15 @@
 pull_request_rules:
   - name: merge automatically when CI passes and PR is approved
     conditions:
-      - check-success = lint
-      - check-success = Nix build on ubuntu
-      - check-success = Nix build on macos
-      - check-success = tests
-      - check-success = test-entrypoints
+      - check-success = "Build cp313 ubuntu-24.04"
+      - check-success = "sdist"
+      - check-success = "Test cp313 ubuntu-24.04"
+      - check-success = "pre-commit.ci - pr"
       - or:
         - approved-reviews-by = nim65s
         - author = nim65s
-        - author = pre-commit-ci[bot]
         - author = dependabot[bot]
+        - author = github-actions[bot]
+        - author = pre-commit-ci[bot]
     actions:
       merge:
